@@ -1,16 +1,14 @@
-## Hi there 👋
+## Abdallah · Data Science · Finance
 
-<!--
-**abdallah-bodzz/abdallah-bodzz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+CS student at Alexandria University (FCDS), focused on applying ML to 
+finance problems — risk modeling, fraud detection, and quantitative analysis.
 
-Here are some ideas to get you started:
+**Projects here:**
+- Credit Risk Scoring — classification model on loan default prediction
+- Fraud Detection API — transaction fraud model served via FastAPI
+- Portfolio Risk Simulator — Monte Carlo + VaR analysis
+- DCF Valuation Engine — full discounted cash flow tool with real financial data
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Stack:** Python · scikit-learn · pandas · FastAPI · SQL · Power BI
+
+Currently building toward a junior ML/data role in fintech or financial services.
