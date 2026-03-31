@@ -41,9 +41,29 @@ I build data-driven tools at the intersection of machine learning and finance â€
 
 ## ðŸ“Š GitHub Stats
 
-![Stats](https://github-readme-stats.vercel.app/api?username=abdallah-bodzz&theme=dark&hide_border=true&include_all_commits=false&count_private=false)
-![Streak](https://nirzak-streak-stats.vercel.app/?user=abdallah-bodzz&theme=dark&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=abdallah-bodzz&theme=dark&hide_border=true&layout=compact)
+<p align="center">
+  <!-- Stats Card - Dark & Light -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=abdallah-bodzz&theme=dark&hide_border=true&include_all_commits=true&count_private=false&show_icons=true">
+    <img src="https://github-readme-stats.vercel.app/api?username=abdallah-bodzz&theme=default&hide_border=true&include_all_commits=true&count_private=false&show_icons=true" alt="GitHub Stats" />
+  </picture>
+</p>
+
+<p align="center">
+  <!-- Streak - Dark & Light -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=abdallah-bodzz&theme=dark&hide_border=true">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=abdallah-bodzz&theme=default&hide_border=true" alt="GitHub Streak" />
+  </picture>
+</p>
+
+<p align="center">
+  <!-- Top Languages -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=abdallah-bodzz&theme=dark&hide_border=true&layout=compact&langs_count=8">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdallah-bodzz&theme=default&hide_border=true&layout=compact&langs_count=8" alt="Top Languages" />
+  </picture>
+</p>
 
 ---
 
