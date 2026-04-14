@@ -28,6 +28,7 @@ I build data-driven tools at the intersection of machine learning and finance �
 ### Business Intelligence & Analytics
 | Project | Description | Stack |
 |---------|-------------|-------|
+| [**monte-carlo-risk-simulator**](https://github.com/abdallah-bodzz/monte-carlo-risk-simulator) | Correlated Monte Carlo for VaR & Expected Shortfall, Cholesky decomposition, fat tails (Student‑t), and live market data. Answers: “How bad can this portfolio get?” | Python · NumPy · SciPy · pandas |
 | [**mortgage-trading-analysis-powerbi**](https://github.com/abdallah-bodzz/mortgage-trading-analysis-powerbi) | Simulates a mortgage trading desk — loan pipeline review, counterparty bid evaluation, benchmark testing, and FICO-based pricing recommendation | Power BI |
 | [**financial-analysis-powerbi-dashboard**](https://github.com/abdallah-bodzz/financial-analysis-powerbi-dashboard) | Multi-page dashboard covering revenue analysis, profit margins, customer segmentation, scenario modeling, and capital budgeting (NPV/IRR) | Power BI |
 | [**supply-chain-analytics-powerbi**](https://github.com/abdallah-bodzz/supply-chain-analytics-powerbi) | Make-vs-buy decision tool with supplier quote analysis, dynamic volume scenario planning, and internal cost comparison | Power BI |
@@ -36,6 +37,7 @@ I build data-driven tools at the intersection of machine learning and finance �
 | [**customer-churn-analysis-excel**](https://github.com/abdallah-bodzz/customer-churn-analysis-excel) | 26.86% churn rate analysis across 6,687 customers using PivotTables and a full dashboard | Excel |
 | [**hr-analytics-powerbi**](https://github.com/abdallah-bodzz/hr-analytics-powerbi) | Employee attrition analysis covering demographics, department/role/tenure/travel, and individual performance tracking | Power BI |
 | [**time-series-analysis-powerbi-dashboard**](https://github.com/abdallah-bodzz/time-series-analysis-powerbi-dashboard) | Retail PoS and MSFT financial data with rolling windows, YTD/YoY DAX measures, and forecasting | Power BI |
+| [**financial-modeling-excel**](https://github.com/abdallah-bodzz/financial-modeling-excel) | Excel financial modeling for real estate investments — income statements, cap rates, forecasting, and dynamic scenario models | Excel |
 
 ---
 
