@@ -17,9 +17,9 @@ I build data-driven tools at the intersection of machine learning, quantitative 
 | **ML & Data Science** | scikit-learn · XGBoost · LightGBM · pandas · NumPy · MLflow · category_encoders · joblib |
 | **Quantitative Finance** | SciPy (VaR, ES, Cholesky) · Monte Carlo simulation · Student‑t distributions · yfinance |
 | **Visualization & BI** | Power BI (DAX, Key Influencers, forecasting) · Plotly · Matplotlib · Chart.js |
-| **Backend & APIs** | FastAPI · Pydantic · Uvicorn |
+| **Backend & APIs** | FastAPI · Pydantic · Uvicorn · Docker |
 | **Databases** | PostgreSQL · MySQL · MS SQL Server |
-| **Tools & Productivity** | Excel (PivotTables, DCF, real estate pro formas, NRM) · Jupyter · Git · YAML |
+| **Tools & Productivity** | Excel (PivotTables, DCF, real estate pro formas, NRM, 3‑statement modeling) · Jupyter · Git · YAML · openpyxl |
 
 ---
 
@@ -29,6 +29,7 @@ I build data-driven tools at the intersection of machine learning, quantitative 
 
 | Project | Description | Stack |
 |---------|-------------|-------|
+| [**fraud-detection-api**](https://github.com/abdallah-bodzz/fraud-detection-api) | Production-ready credit card fraud detection API with business-aware threshold tuning (0.4 → $10,576 protected). XGBoost, FastAPI, Docker, rate limiting. Optimises for dollars saved, not accuracy. **AUPRC 0.87** on highly imbalanced data (0.17% fraud). | Python · XGBoost · FastAPI · Docker · Pydantic · loguru |
 | [**credit-risk-scoring**](https://github.com/abdallah-bodzz/credit-risk-scoring) | End-to-end loan default prediction: EDA, feature engineering, model comparison (LR, RF, XGBoost, LightGBM), probability calibration, and business‑optimised threshold. **Impact:** $3.55M net benefit / 152% ROI per 10k loans. | Python · XGBoost · LightGBM · scikit-learn · YAML |
 | [**heart-disease-prediction**](https://github.com/abdallah-bodzz/heart-disease-prediction) | Binary classifier on UCI Cleveland dataset. Random Forest with threshold‑optimised screening (t=0.40): recall **0.964**, F1 **0.900**. **Impact:** 164 fewer missed diagnoses → ~$8.1M savings per 10k patients. | Python · scikit-learn · pandas · modular `src/` |
 
@@ -43,6 +44,7 @@ I build data-driven tools at the intersection of machine learning, quantitative 
 | Project | Description | Stack |
 |---------|-------------|-------|
 | [**dcf-valuation-engine**](https://github.com/abdallah-bodzz/dcf-valuation-engine) | DCF valuation tool with real financial data (yfinance), FastAPI backend, dark‑theme UI, and 7×7 sensitivity heatmap. Projects unlevered FCF, WACC discounting, Gordon Growth terminal value. | Python · FastAPI · yfinance · Pydantic · Chart.js |
+| [**financial-Excel-model-generator**](https://github.com/abdallah-bodzz/financial-Excel-model-generator) | Python script that generates a dynamic 3‑statement financial model (P&L, Balance Sheet, Cash Flow, DCF valuation, scenario engine, sensitivity matrix) as an Excel file. All calculations live in Excel — Python only builds the structure. Supports Base/Best/Worst scenarios with dropdown switching via INDEX/MATCH. | Python · openpyxl · JSON config |
 
 ### 📈 Power BI Dashboards
 
@@ -68,8 +70,9 @@ I build data-driven tools at the intersection of machine learning, quantitative 
 ## 📌 What You'll Find Here
 
 - **Business‑first ML** – models optimised for real costs (false negatives costlier than false positives)
+- **Production‑ready APIs** – fraud detection with Docker, rate limiting, structured logging
 - **Quantitative risk** – proper correlation (Cholesky), fat tails, VaR/ES
-- **Valuation tools** – DCF with sensitivity, real data integration
+- **Valuation tools** – DCF with sensitivity, real data integration, 3‑statement Excel generators
 - **Interactive dashboards** – Power BI & Excel for ops, finance, and HR analytics
 - **Clean, modular code** – many repos include `src/` packages, YAML configs, and reproducibility
 
