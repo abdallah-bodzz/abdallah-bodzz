@@ -1,97 +1,106 @@
 # Abdallah Abdelhady
-**Junior Financial ML / Data Analyst · CS @ Alexandria University (FCDS)**
+**Data Analyst · ML Engineer · CS @ Alexandria University (FCDS)**
 
-[![GitHub followers](https://img.shields.io/github/followers/abdallah-bodzz?label=Follow&style=social)](https://github.com/abdallah-bodzz)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/abdallah-abdelhady-4187802b2)
-[![Email](https://img.shields.io/badge/-Email-c14438?style=flat-square&logo=Gmail&logoColor=white)](mailto:xabdallahxabdallahx@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-abdallah--bodzz.github.io-1A5276?style=flat-square&logo=github&logoColor=white)](https://abdallah-bodzz.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdallah-abdelhady-4187802b2)
+[![Email](https://img.shields.io/badge/Email-Contact-c14438?style=flat-square&logo=gmail&logoColor=white)](mailto:xabdallahxabdallahx@gmail.com)
+[![GitHub followers](https://img.shields.io/github/followers/abdallah-bodzz?label=Follow&style=flat-square)](https://github.com/abdallah-bodzz)
 
-I build data-driven tools at the intersection of machine learning, quantitative risk, and finance — from credit risk pipelines and Monte Carlo VaR simulations to DCF valuation engines and business intelligence dashboards. Every project is driven by **real business impact** (ROI, cost savings, risk reduction). Currently seeking a junior ML/Quant/Data role in fintech or financial services.
+I build data-driven tools at the intersection of **machine learning, quantitative risk, and finance** — credit risk pipelines, Monte Carlo VaR simulations, DCF valuation engines, computer vision systems, and geopolitical event studies. Every project is driven by **real business impact**: ROI, cost savings, risk reduction, or a finding that changes how you read the market.
 
 ---
 
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
-|----------|--------------|
+|----------|--------------| 
 | **Languages** | Python · R · SQL |
 | **ML & Data Science** | scikit-learn · XGBoost · LightGBM · pandas · NumPy · MLflow · category_encoders · joblib |
-| **Quantitative Finance** | SciPy (VaR, ES, Cholesky) · Monte Carlo simulation · Student‑t distributions · yfinance |
-| **Visualization & BI** | Power BI (DAX, Key Influencers, forecasting) · Plotly · Matplotlib · Chart.js |
+| **Computer Vision** | OpenCV · MediaPipe · TensorFlow · CNN (EAR/MAR geometry · solvePnP) |
+| **Quantitative Finance** | SciPy (VaR, ES, Cholesky) · Monte Carlo simulation · OLS event study · Student‑t · yfinance |
+| **Visualization & BI** | Power BI (DAX, drill-through, bookmarks, Key Influencers, forecasting) · Plotly · Matplotlib · Chart.js |
 | **Backend & APIs** | FastAPI · Pydantic · Uvicorn · Docker |
 | **Databases** | PostgreSQL · MySQL · MS SQL Server |
-| **Tools & Productivity** | Excel (PivotTables, DCF, real estate pro formas, NRM, 3‑statement modeling) · Jupyter · Git · YAML · openpyxl |
+| **Tools** | Excel (PivotTables, DCF, NRM, 3‑statement modeling) · Jupyter · Git · YAML · openpyxl |
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Projects
 
 ### 🤖 Machine Learning
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| [**fraud-detection-api**](https://github.com/abdallah-bodzz/fraud-detection-api) | Production-ready credit card fraud detection API with business-aware threshold tuning (0.4 → $10,576 protected). XGBoost, FastAPI, Docker, rate limiting. Optimises for dollars saved, not accuracy. **AUPRC 0.87** on highly imbalanced data (0.17% fraud). | Python · XGBoost · FastAPI · Docker · Pydantic · loguru |
-| [**credit-risk-scoring**](https://github.com/abdallah-bodzz/credit-risk-scoring) | End-to-end loan default prediction: EDA, feature engineering, model comparison (LR, RF, XGBoost, LightGBM), probability calibration, and business‑optimised threshold. **Impact:** $3.55M net benefit / 152% ROI per 10k loans. | Python · XGBoost · LightGBM · scikit-learn · YAML |
-| [**heart-disease-prediction**](https://github.com/abdallah-bodzz/heart-disease-prediction) | Binary classifier on UCI Cleveland dataset. Random Forest with threshold‑optimised screening (t=0.40): recall **0.964**, F1 **0.900**. **Impact:** 164 fewer missed diagnoses → ~$8.1M savings per 10k patients. | Python · scikit-learn · pandas · modular `src/` |
+| [**fraud-detection-api**](https://github.com/abdallah-bodzz/fraud-detection-api) | Production-ready credit card fraud detection API. Threshold tuned for dollars saved — not F1. **AUPRC 0.87** on 0.17% fraud rate. **$10,576 protected per run** at threshold 0.4. FastAPI, Docker, rate limiting, structured logging. | Python · XGBoost · FastAPI · Docker |
+| [**credit-risk-scoring**](https://github.com/abdallah-bodzz/credit-risk-scoring) | End-to-end loan default prediction: EDA, feature engineering, model comparison (LR, RF, XGBoost, LightGBM), probability calibration, business-optimised threshold. **$3.55M net benefit / 152% ROI per 10k loans.** | Python · XGBoost · LightGBM · scikit-learn |
+| [**heart-disease-prediction**](https://github.com/abdallah-bodzz/heart-disease-prediction) | Binary classifier on UCI Cleveland dataset. Threshold-optimised screening (t=0.40): recall **0.964**, F1 **0.900**. **164 fewer missed diagnoses → ~$8.1M savings per 10k patients.** | Python · scikit-learn · pandas |
+| [**driveguard**](https://github.com/abdallah-bodzz/driveguard) | Real-time driver fatigue detection via standard webcam. EAR/MAR geometry + CNN hybrid (84k-image MRL dataset, **98.8% accuracy**, 3–5ms CPU inference). Dual-timescale fatigue scoring, head pose via solvePnP, gesture-based alarm dismissal. 25–30 FPS, fully local. | Python · OpenCV · MediaPipe · TensorFlow |
 
-### 📉 Quantitative Risk
+### 📉 Quantitative Risk & Event Studies
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| [**monte-carlo-risk-simulator**](https://github.com/abdallah-bodzz/monte-carlo-risk-simulator) | Correlated Monte Carlo for VaR & Expected Shortfall. Cholesky decomposition, fat tails (Student‑t, ν=5), live market data (yfinance). FastAPI + interactive dashboard. Answers: *“How bad can this portfolio get?”* | Python · NumPy · SciPy · yfinance · FastAPI · Chart.js |
+| [**2026-hormuz-blockade-analysis**](https://github.com/abdallah-bodzz/2026-hormuz-blockade-analysis) | Quantitative event study of the 47-day Strait of Hormuz blockade (Feb–Apr 2026). Key finding: **WTI +32.9% during closure while XOM fell −1.5%** — energy equities are not oil proxies in supply shocks. Beta flipped from +0.15 to −0.42. Gold dropped −9.6% (safe-haven failure under margin pressure). OLS abnormal returns, Cholesky correlation, DXY decomposition, counterfactual baseline across 10 assets. | Python · SciPy · yfinance · Plotly |
+| [**monte-carlo-risk-simulator**](https://github.com/abdallah-bodzz/monte-carlo-risk-simulator) | Correlated portfolio Monte Carlo for VaR & Expected Shortfall. Cholesky decomposition, fat tails (Student‑t, ν=5), live market data. FastAPI + interactive Chart.js dashboard. Answers: *"How bad can this portfolio actually get?"* | Python · NumPy · SciPy · FastAPI |
 
 ### 💰 Valuation & Financial Engineering
 
 | Project | Description | Stack |
 |---------|-------------|-------|
-| [**dcf-valuation-engine**](https://github.com/abdallah-bodzz/dcf-valuation-engine) | DCF valuation tool with real financial data (yfinance), FastAPI backend, dark‑theme UI, and 7×7 sensitivity heatmap. Projects unlevered FCF, WACC discounting, Gordon Growth terminal value. | Python · FastAPI · yfinance · Pydantic · Chart.js |
-| [**financial-Excel-model-generator**](https://github.com/abdallah-bodzz/financial-Excel-model-generator) | Python script that generates a dynamic 3‑statement financial model (P&L, Balance Sheet, Cash Flow, DCF valuation, scenario engine, sensitivity matrix) as an Excel file. All calculations live in Excel — Python only builds the structure. Supports Base/Best/Worst scenarios with dropdown switching via INDEX/MATCH. | Python · openpyxl · JSON config |
+| [**dcf-valuation-engine**](https://github.com/abdallah-bodzz/dcf-valuation-engine) | DCF tool with live yfinance data, WACC discounting, Gordon Growth terminal value, and a 7×7 sensitivity heatmap. Dark-theme UI. | Python · FastAPI · yfinance · Chart.js |
+| [**financial-Excel-model-generator**](https://github.com/abdallah-bodzz/financial-Excel-model-generator) | Python generates a complete 3-statement financial model (P&L, Balance Sheet, Cash Flow, DCF, scenario engine, sensitivity matrix) as a native Excel file. All formulas live in Excel — Python only builds the structure. Base/Best/Worst scenarios via INDEX/MATCH dropdown. | Python · openpyxl |
 
 ### 📈 Power BI Dashboards
 
 | Project | Description |
 |---------|-------------|
-| [**mortgage-trading-analysis-powerbi**](https://github.com/abdallah-bodzz/mortgage-trading-analysis-powerbi) | Mortgage trading desk simulation: loan pipeline review, counterparty bid evaluation, benchmark testing, and FICO‑based pricing recommendations. DataCamp capstone. |
-| [**financial-analysis-powerbi-dashboard**](https://github.com/abdallah-bodzz/financial-analysis-powerbi-dashboard) | Multi‑page (12) dark dashboard: revenue/profit analysis, customer segmentation, scenario modeling, capital budgeting (NPV/IRR, DCF, payback). |
-| [**supply-chain-analytics-powerbi**](https://github.com/abdallah-bodzz/supply-chain-analytics-powerbi) | Make‑vs‑buy decision tool with supplier quote analysis, dynamic volume scenario planning, and internal manufacturing cost comparison. |
-| [**customer-churn-analysis-powerbi**](https://github.com/abdallah-bodzz/customer-churn-analysis-powerbi) | Telecom churn analysis (Databel): churn by reason, geography, age, contract type, data plan usage, and international plan mismatch. |
-| [**hr-analytics-powerbi**](https://github.com/abdallah-bodzz/hr-analytics-powerbi) | Employee attrition analysis (Atlas Labs): workforce demographics, attrition by department/role/tenure/travel, individual performance tracking. |
-| [**time-series-analysis-powerbi-dashboard**](https://github.com/abdallah-bodzz/time-series-analysis-powerbi-dashboard) | Retail PoS (Superstore) + MSFT financial data: rolling windows, YTD/YoY DAX measures, and forecasting. |
+| [**powerbi-wake-county-budget-report**](https://github.com/abdallah-bodzz/powerbi-wake-county-budget-report) | Government expenditure analysis on Wake County, NC open data (FY2017–2019). Star-schema model from raw CSVs; DAX measures for YTD spend, budget utilization, variance flags; drill-through to cost-center level. Replicates a real public-sector BI workflow end-to-end. |
+| [**mortgage-trading-analysis-powerbi**](https://github.com/abdallah-bodzz/mortgage-trading-analysis-powerbi) | Mortgage trading desk simulation: loan pipeline review, counterparty bid evaluation, benchmark testing, FICO‑based pricing recommendations. DataCamp capstone. |
+| [**financial-analysis-powerbi-dashboard**](https://github.com/abdallah-bodzz/financial-analysis-powerbi-dashboard) | 12-page dark dashboard: revenue/profit decomposition, customer segmentation, scenario modeling, capital budgeting (NPV/IRR, DCF, payback). |
+| [**supply-chain-analytics-powerbi**](https://github.com/abdallah-bodzz/supply-chain-analytics-powerbi) | Make‑vs‑buy decision tool with supplier quote analysis, dynamic volume scenario planning, internal manufacturing cost comparison. |
+| [**customer-churn-analysis-powerbi**](https://github.com/abdallah-bodzz/customer-churn-analysis-powerbi) | Telecom churn analysis (Databel, 6,687 customers, 26.86% churn): breakdown by reason, geography, age, contract type, data plan, international plan mismatch. |
+| [**hr-analytics-powerbi**](https://github.com/abdallah-bodzz/hr-analytics-powerbi) | Employee attrition analysis (Atlas Labs): demographics, attrition by department/role/tenure/travel, individual performance tracking. Automated variance logic surfaced 3 high-attrition clusters on first load. |
+| [**time-series-analysis-powerbi-dashboard**](https://github.com/abdallah-bodzz/time-series-analysis-powerbi-dashboard) | Retail PoS (Superstore) + MSFT financial data: rolling windows, YTD/YoY DAX measures, and forecasting visuals. |
 
 ### 📊 Excel Financial Models
 
 | Project | Description |
 |---------|-------------|
-| [**financial-modeling-excel**](https://github.com/abdallah-bodzz/financial-modeling-excel) | Excel financial modeling course: income statements, cap rates, forecasts, and dynamic models for real estate investments. |
+| [**financial-modeling-excel**](https://github.com/abdallah-bodzz/financial-modeling-excel) | Income statements, cap rates, forecasts, and dynamic models for real estate investments. |
 | [**net-revenue-management-excel**](https://github.com/abdallah-bodzz/net-revenue-management-excel) | Full NRM business case for an FMCG supplier (HealthMax): market share, portfolio profitability, subcategory opportunity sizing, promotional ROI. |
-| [**customer-churn-analysis-excel**](https://github.com/abdallah-bodzz/customer-churn-analysis-excel) | Excel analysis of 26.86% churn across 6,687 telecom customers (Databel). Built with PivotTables, calculated columns, and a complete dashboard. |
+| [**customer-churn-analysis-excel**](https://github.com/abdallah-bodzz/customer-churn-analysis-excel) | Churn analysis on 6,687 telecom customers (Databel). PivotTables, calculated columns, complete dashboard. |
 
 ---
 
 ## 📌 What You'll Find Here
 
-- **Business‑first ML** – models optimised for real costs (false negatives costlier than false positives)
-- **Production‑ready APIs** – fraud detection with Docker, rate limiting, structured logging
-- **Quantitative risk** – proper correlation (Cholesky), fat tails, VaR/ES
-- **Valuation tools** – DCF with sensitivity, real data integration, 3‑statement Excel generators
-- **Interactive dashboards** – Power BI & Excel for ops, finance, and HR analytics
-- **Clean, modular code** – many repos include `src/` packages, YAML configs, and reproducibility
+- **Business-first ML** — models optimised for real cost structures (false negatives costlier than false positives)
+- **Production-ready APIs** — fraud detection with Docker, rate limiting, structured logging
+- **Quantitative risk & event studies** — proper correlation (Cholesky), fat tails, VaR/ES, OLS abnormal returns
+- **Computer vision** — real-time fatigue detection with CNN hybrid, gesture control, session recording
+- **Valuation tools** — DCF with sensitivity, real data integration, 3-statement Excel generators
+- **Geopolitical data analysis** — cross-asset shock transmission, counterfactual baselines, regime detection
+- **Interactive dashboards** — Power BI & Excel for government, finance, ops, HR, and supply chain
+- **Clean, modular code** — `src/` packages, YAML configs, reproducible notebooks
 
 ---
 
-## 📱 Sharing My Data Journey on TikTok
+## 📱 Content — @data_w_bodzz
 
-I also document my learning process, Power BI tips, SQL deep dives, and behind‑the‑scenes of my GitHub projects on **@data_w_bodzz** — think practical “day in the life of a CS student turning finance into dashboards.”  
-→ *Best performing content:* Power BI normalization & lookup tables (16k+ views).  
-→ *What you’ll find:* real‑time series (“Day X”), mortgage trading insights, and honest growth.  
-Follow along if you’re into data analytics, fintech applications, or just want to see how I build these projects.
+I document Power BI builds, SQL deep dives, and project breakdowns on **TikTok & YouTube**.
+
+→ **200,000+ total views · 1,500+ followers**  
+→ Best video: Power BI normalization & lookup tables — **16k+ views**  
+→ Content: real-time build series, mortgage trading insights, honest project breakdowns
 
 ---
 
 ## 🌐 Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdallah-abdelhady-4187802b2)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:xabdallahxabdallahx@gmail.com)
-[![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@data_w_bodzz)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@abdallahabdelhady8713)
-[![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/hottestboda)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/abdallah_abdelhadi)
+[![Portfolio](https://img.shields.io/badge/Portfolio-abdallah--bodzz.github.io-1A5276?style=flat-square&logo=github)](https://abdallah-bodzz.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdallah-abdelhady-4187802b2)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:xabdallahxabdallahx@gmail.com)
+[![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?style=flat-square&logo=TikTok&logoColor=white)](https://tiktok.com/@data_w_bodzz)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat-square&logo=YouTube&logoColor=white)](https://youtube.com/@abdallahabdelhady8713)
+[![X](https://img.shields.io/badge/X-black.svg?style=flat-square&logo=X&logoColor=white)](https://x.com/hottestboda)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/abdallah_abdelhadi)
