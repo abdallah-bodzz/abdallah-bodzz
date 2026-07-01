@@ -85,7 +85,7 @@ Production-ready NLP pipeline for customer review sentiment classification. Text
 
 **[2026-hormuz-blockade-analysis](https://github.com/abdallah-bodzz/2026-hormuz-blockade-analysis)** — *Cross-Asset Shock Transmission Study · v2*
 
-Quantitative event study of the 47-day Strait of Hormuz blockade (Feb–Apr 2026). Key finding: **WTI +32.9% during closure while XOM fell −1.5%** — energy equities are not oil proxies in supply shocks. Beta flipped from +0.15 to −0.42. Gold dropped −9.6% (safe-haven failure under margin pressure). OLS abnormal returns, Cholesky correlation, DXY decomposition, counterfactual baseline across 10 assets. Version 2 adds extended post-event recovery analysis.
+Hormuz 2026: When Diplomacy Decoupled From Supply — Quantitative event study of the Strait of Hormuz crisis (113 trading days). Update 2 reveals the May Paradox: WTI fell −20% while transit capacity stayed near 2%. Cross-asset shock transmission across 16 assets, 5 event windows. Live interactive dashboard. **[Live Dashboard →](https://abdallah-bodzz.github.io/2026-hormuz-blockade-analysis/)**
 
 `Python` `SciPy` `yfinance` `Plotly`
 
