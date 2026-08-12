@@ -41,9 +41,17 @@ Built as if it were a real consulting engagement on AdventureWorks 2022. Three-l
 
 ### Machine Learning
 
+**[network-fraud-scoring](https://github.com/abdallah-bodzz/network-fraud-scoring)** — *Graph-Aware AML Fraud Detection*
+
+Network-aware fraud scoring on 3.7M AMLSim transactions. Fused tabular XGBoost features with graph structure (degree, PageRank, community, GraphSAGE embeddings) and benchmarked the fusion against a tabular-only baseline at fixed review capacity, not AUPRC alone. The fusion model won, AUPRC 0.0438 vs. 0.0415; GraphSAGE underperformed and that result is reported, not buried. Rule-based typology matching flags fan-out, cycle, and stack patterns, and each flagged cluster gets an LLM explanation validated against source data before a reviewer sees it, 100% grounding on the held-out set. FastAPI service, operator dashboard, Docker, 31 tests.
+
+`Python` `PyTorch Geometric` `GraphSAGE` `XGBoost` `FastAPI` `Docker`
+
+---
+
 **[fraud-detection-api](https://github.com/abdallah-bodzz/fraud-detection-api)** — *Production Credit Card Fraud Detection API*
 
-I treated this as a cost problem, not a classification benchmark, so the decision threshold is picked by net dollar value instead of F1. AUPRC 0.877 on a 0.173% fraud rate, $10,484 net value protected on the held-out test set. Ships as a FastAPI service with Pydantic validation, rate limiting, structured logging, a branded operator dashboard, Docker with a healthcheck, CI/CD, and 32 tests against a real fixture model, not mocked predictions.
+I treated this as a cost problem, not a classification benchmark, so the decision threshold is picked by net dollar value instead of F1. AUPRC 0.877 on a 0.173% fraud rate, $10,484 net value protected on the held-out test set. Ships as a FastAPI service with Pydantic validation, rate limiting, structured logging, a branded operator dashboard, Docker with a healthcheck, CI/CD, and 32 tests against a real fixture model, not mocked predictions. Transaction-level precursor to network-fraud-scoring above.
 
 `Python` `XGBoost` `FastAPI` `Docker` `CI/CD`
 
